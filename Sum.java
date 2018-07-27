@@ -5,9 +5,13 @@ class Greater
 	public static void main (String[] args) throws java.lang.Exception
 	{
 			Scanner sc=new Scanner(System.in);
-		long N=sc.nextLong();
-		for(int i=0;i<N;i++)
-			System.out.println("Hello");
+			int n=sc.nextInt();
+		int sum=0;
+		for(int i=1;i<=n;i++)
+		{
+			sum+=i;
+		}
+			System.out.println(sum);
 			
 	}
 }
