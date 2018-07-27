@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Value
+class prime
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
