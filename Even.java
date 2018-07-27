@@ -1,4 +1,4 @@
-import java.util.Scanner*;
+import java.util.Scanner;
 class Even
 {
 	public static void main (String[] args) throws java.lang.Exception
