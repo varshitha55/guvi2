@@ -5,6 +5,7 @@ class Value
 	public static void main (String[] args) throws java.lang.Exception
 	{
 				Scanner sc=new Scanner(System.in);
+		int num=sc.nextInt();
 	                       	                        int dup1=num,dup=0,rem=0;
 	                        while(num>0)
 	                        {
