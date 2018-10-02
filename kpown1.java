@@ -5,23 +5,23 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class occnk1
+class kpown1
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
 		int k=sc.nextInt();
-		int count=0;
-		while(n>0)
+		int n=sc.nextInt();
+		int i=0;
+		for(i=0;i<=k;i++)
 		{
-			int rem=n%10;
-			if(rem==k)
+			if(k==(int) Math.pow(n,i))
 			{
-				count++;
+				System.out.print("yes");
+				break;
 			}
-			n /= 10;
 		}
-		System.out.println(count);
+		if(i>k)
+			System.out.print("no");	
 	}
 }
