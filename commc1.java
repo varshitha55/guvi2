@@ -5,21 +5,27 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class stroccn1
+class commc1
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc=new Scanner(System.in);
-		String str=sc.next();
-		char c=sc.next().charAt(0);
+		String str1=sc.next();
+		String str2=sc.next();
 		int count=0;
-		for(int i=0;i<str.length();i++)
-		{
-			if(str.charAt(i)==c)
+			for(int i=0;i<str1.length();i++)
 			{
-			count++;
+				if(str1.charAt(i)==str2.charAt(i))
+				{
+					System.out.print("yes");
+					count=1;
+					break;
+				}
 			}
-		}
-		System.out.println(count);
+			if(count==0)
+			{
+				System.out.print("no");	
+			}
+		
 	}
 }
