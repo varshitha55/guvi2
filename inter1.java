@@ -5,29 +5,18 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class parect21
+class inter1
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc=new Scanner(System.in);
-		int p=sc.nextInt();
-		int a=sc.nextInt();
-		int count=0;
-		p /= 2;
-		for(int i=1;i<=a;i++)
-		{
-			for(int j=1;j<=p;j++)
-			{
-				if(i+j==p && i*j==a)
-				{
-					count=1;
-					break;
-				}
-			}
-		}
-		if(count==1)
-		System.out.println("yes");
+		int a1=sc.nextInt();
+		int a2=sc.nextInt();
+		int a3=sc.nextInt();
+		int sum=a1+a2+a3;
+		if(sum==180)
+		System.out.print("yes");
 		else
-		System.out.println("no");
+		System.out.print("no");
 	}
 }
