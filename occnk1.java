@@ -5,21 +5,23 @@ import java.lang.*;
 import java.io.*;
 
 /* Name of the class has to be "Main" only if the class is public. */
-class string31
+class occnk1
 {
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		Scanner sc=new Scanner(System.in);
-		String str=sc.nextLine();
-		if(str.length()<=3)
-			System.out.print(str.charAt(0));
-		else
+		int n=sc.nextInt();
+		int k=sc.nextInt();
+		int count=0;
+		while(n>0)
 		{
-			for(int i=0;i<str.length();i++)
+			int rem=n%10;
+			if(rem==k)
 			{
-				if(i%3==0)
-				System.out.print(str.charAt(i));
+				count++;
 			}
+			n /= 10;
 		}
+		System.out.println(count);
 	}
 }
